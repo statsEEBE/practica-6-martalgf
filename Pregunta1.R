@@ -38,7 +38,7 @@ z.test(x, sigma.x = sigma, conf.level = 0.9, mu=mu0) #z=zobs
 pvalor <- 2*pnorm(-zobs)
 pvalor
 #para cola superior
-z.test(x, sigma.x = sigma, conf.level = 0.9, mu=mu0, alternative = "greater")
+z.test(x, sigma.x = sigma, conf.level = 0.9, mu=mu0, alternative = "greater") 
 
 #b)
 n <- (qnorm(0.975)*sigma)^2
@@ -56,7 +56,7 @@ s <- sd(x)
 c(xbar-t005*s/sqrt(n), xbar+t005*s/sqrt(n))
 t.test(x, conf.level = 0.99)
 
-#Hipotesi
+#Hipotesi de dos colas/two.sided
 #H0: mu=mu0=500   
 #H1: mu!=mu0=500
 t.test(x, alternative = "two.sided", conf.level = 0.99, mu=500)
