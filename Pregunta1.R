@@ -55,3 +55,10 @@ s <- sd(x)
 
 c(xbar-t005*s/sqrt(n), xbar+t005*s/sqrt(n))
 t.test(x, conf.level = 0.99)
+
+#Hipotesi
+#H0: mu=mu0=500
+#H1: mu!=mu0=500
+t.test(x, alternative = "two.sided", conf.level = 0.99, mu=500)
+#calcular tobs
+#compara p-valor con alpha
